@@ -1,5 +1,46 @@
 ---
 apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team1
+  description: Team 1
+spec:
+  type: team
+  profile:
+    displayName: Team 1
+    email: team1@example.com
+    picture: https://avatars.dicebear.com/api/initials/team1.svg
+  children: []
+  members: [mohashi]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: mohashi
+spec:
+  profile:
+    displayName: Marcelo Ohashi
+    email: mohashi@gmail.com
+  memberOf: [team1]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: sample-backstage-domain
+  description: Everything about sample-backstage-domain
+spec:
+  owner: group:team1
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: sample-backstage-system
+  description: Description of sample-backstage-system
+spec:
+  owner: group:team1
+  domain: sample-backstage-domain
+---
+apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: sample-backstage-app-1
