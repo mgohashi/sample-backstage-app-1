@@ -1,0 +1,9 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: sample-backend-system
+  description: Description of sample-backend-system
+spec:
+  owner: group:team1
+  domain: sample-backend-domain

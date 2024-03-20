@@ -1,0 +1,11 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: mohashi
+spec:
+  profile:
+    displayName: Marcelo Ohashi
+    email: mohashi@example.com
+    picture: https://avatars.dicebear.com/api/initials/mohashi@example.com.svg
+  memberOf: [team1]

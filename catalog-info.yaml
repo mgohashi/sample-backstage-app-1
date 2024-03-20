@@ -1,21 +1,3 @@
----
-apiVersion: backstage.io/v1alpha1
-kind: Domain
-metadata:
-  name: sample-backstage-domain
-  description: Everything about sample-backstage-domain
-spec:
-  owner: group:guest
----
-apiVersion: backstage.io/v1alpha1
-kind: System
-metadata:
-  name: sample-backstage-system
-  description: Description of sample-backstage-system
-spec:
-  owner: group:guest
-  domain: sample-backstage-domain
----
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
@@ -53,3 +35,14 @@ spec:
   type: database
   owner: group:guest
   system: sample-backstage-system
+---
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: sample-backstage-location
+spec:
+  targets:
+    - ./catalog-info-team.yaml
+    - ./catalog-info-members.yaml
+    - ./catalog-info-domain.yaml
+    - ./catalog-info-system.yaml

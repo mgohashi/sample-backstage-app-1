@@ -1,0 +1,8 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: sample-backstage-domain
+  description: Everything about sample-backstage-domain
+spec:
+  owner: group:team1
