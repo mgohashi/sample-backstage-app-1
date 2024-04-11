@@ -15,5 +15,7 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+      - name: Print Env DEPLOY_CONFIG
+        run: |
           echo "${{ env.DEPLOY_CONFIG }}"
       - run: echo "🍏 This job's status is ${{ job.status }}."
