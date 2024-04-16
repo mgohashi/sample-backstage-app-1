@@ -3,6 +3,8 @@ kind: Component
 metadata:
   name: sample-backstage-app-1
   description: Some description of the sample-backstage-app-1 component
+  annotations:
+    github.com/project-slug: mgohashi/sample-backstage-app-1
 spec:
   type: service
   lifecycle: production
