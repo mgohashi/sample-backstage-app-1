@@ -8,7 +8,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: group:guests
+  owner: user:guest
   system: sample-backstage-system
   dependsOn:
     - resource:default/sample-backstage-app-1-db
