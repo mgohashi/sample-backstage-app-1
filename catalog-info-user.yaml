@@ -6,6 +6,6 @@ metadata:
 spec:
   profile:
     displayName: Marcelo Ohashi
-    email: mohashi@example.com
-    picture: https://avatars.dicebear.com/api/initials/mohashi@example.com.svg
+    email: mohashi@gmail.com
+    picture: https://avatars.dicebear.com/api/initials/mohashi@gmail.com.svg
   memberOf: [team1]
